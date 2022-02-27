@@ -1,0 +1,2 @@
+export {};
+await Promise.resolve();
