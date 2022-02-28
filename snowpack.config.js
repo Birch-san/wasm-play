@@ -26,5 +26,7 @@ export default {
     src: {url: '/build'},
     // Mount "public" to the root URL path ("/*") and serve files with zero transformations:
     public: {url: '/', static: true, resolve: false},
+    cpp: {url: '/cpp', static: true, resolve: false},
+    cpp_out: {url: '/cpp_out', static: true, resolve: false},
   },
 };
