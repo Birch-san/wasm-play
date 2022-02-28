@@ -7,7 +7,7 @@ export default {
         input: ['.ts'], // (optional) specify files for swc to transform
         // https://swc.rs/docs/configuration/compilation
         transformOptions: {
-          sourceMaps: true,
+          sourceMaps: 'inline',
           jsc: {
             parser: {
               syntax: "typescript",
@@ -29,4 +29,7 @@ export default {
     cpp: {url: '/cpp', static: true, resolve: false},
     cpp_out: {url: '/cpp_out', static: true, resolve: false},
   },
+  buildOptions: {
+    sourcemap: 'inline'
+  }
 };
